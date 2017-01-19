@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+body{font-family:Arial, Helvetica, sans-serif; }
+body,ul,li{margin:o; padding:0; list-style:none; }
+.wrap{width:70%; height:200px; margin:50px  auto; background-color:white; }
+.wrap h1{font-size:20px; text-align:center; line-height:200px;}
+.effect{box-shadow:0px 1px 4px rgba(0,0,0,0.3),0px 0px 40px rgba(0,0,0,0.1) inset; position:relative;}
+.effect:before,.effect:after{content:''; z-index:-1; background:#fff; position:absolute; top:50%; bottom:0; right:10px; left:10px;
+			box-shadow:0 0 20px rgba(0,0,0,0.8); border-radius:100px/10px;}/* 在盒子前面加内容*/
+			
+.box{width:980px; height:auto; clear:both; overflow:hidden; margin:20px auto;}
+.box li{width:300px; position:relative; background:#fff; height:210px; float:left; margin:20px 10px; border:2px solid #efefef; box-shadow:0 1px 4px rgba(0,0,0,0.3),0 0 60px rgba(0,0,0,0.1) inset;}
+.box li img{display:block; width:290px; height:200px; margin:5px;}
+.box li:before{content:''; z-index:-1; position:absolute; width:90%; height:80%; left:20px; bottom:8px; box-shadow:0 8px 20px rgba(0,0,0,0.6); transform:skew(-12deg) rotate(-4deg); background:transparent;}
+
+.box li:after{content:''; z-index:-1; position:absolute; width:90%; height:80%; right:20px; bottom:8px; box-shadow:0 8px 20px rgba(0,0,0,0.6); transform:skew(12deg) rotate(4deg);}
+
+
+</style>
+
+</head>
+
+<body>
+	<div class="wrap effect">
+    	<h1>Shadow Effect</h1>
+    </div>  
+    
+	<ul class="box">
+    	<li><img src="../img/2m.jpg" /></li>
+        <li><img src="../img/3m.jpg" /></li>
+        <li><img src="../img/4m.jpg" /></li>
+    </ul>
+    
+</body>
+</html>
